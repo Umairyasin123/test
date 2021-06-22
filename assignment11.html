@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        #myroad {
+            width: 102%;
+        }
+
+        .wheel:nth-child(2) {
+            width: 59px;
+            position: absolute;
+            left: 290px;
+            top: 92px;
+            transform:rotate(0deg);
+            transition: transform 10s linear 0s;
+        }
+
+        .wheel:nth-child(3) {
+            width: 59px;
+            position: absolute;
+            left: 62px;
+            top: 91px;
+            transform:rotate(0deg);
+            transition: transform 10s linear 0s;
+        }
+
+         #car:hover .wheel:nth-child(2),
+         #car:hover .wheel:nth-child(3)
+         {
+            transform:rotate(360deg);
+            rotate: 100px;
+
+        }
+
+        #car {
+            position: relative;
+            top: -265px;
+        }
+
+        #carBody {
+            width: 400px;
+        }
+
+        #car{
+            margin-left:0;
+            transition: margin-left 10s linear 0s;
+        }
+
+        #car:hover{
+            margin-left: 1050px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <img id="myroad" src="myroad.jpg" alt="">
+
+    <div id="car">
+        <img id="carBody" src="baba.jpg" alt="">
+
+        <!-- <img class="wheel" src="wheel.png" alt="">
+        <img class="wheel" src="wheel.png" alt=""> -->
+        
+    </div>
+
+
+</body>
+
+</html>
+
+</body>
+</html>

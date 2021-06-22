@@ -1,0 +1,40 @@
+#ua{ 
+background-color: cornflowerblue;
+}
+header{
+    background-color: green;
+    height: 120px;
+    width: 484px;
+}
+aside{
+background-color:  blue;
+width: 100px;
+height: 300px;
+display: inline-block;
+}
+#yellow-parent{
+margin-top: 8px;
+margin-left: 8px;
+}
+section{
+background-color: red;
+width: 379px;
+height:400px;
+display: inline-block;
+vertical-align: top;
+}
+.yellow-box{
+ width: 100px;
+ height: 100px;
+ background-color: yellow;
+ display: inline-block;
+} 
+#yellow-parent{
+ margin-left: 15px;
+}  
+.purple-box{
+ background-color: purple;
+ height: 100px;
+ width: 311px;
+ margin-left: 14px
+}

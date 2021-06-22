@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            
+            list-style-type: none;
+        }
+        #main > li{
+            display: inline-block;
+            margin-left: 100px;
+        }
+        nav{
+            background-color:grey;
+
+        } 
+        #city{
+            display: none;
+            position: absolute;
+            width: 150px;
+            list-style-type: none;
+            
+        }
+        #main li:hover{
+            background-color: hotpink;
+            border-bottom:2px solid indigo;
+        }
+        #cities:hover #city{
+            display: block;
+        }
+#towns{ 
+    list-style-type: none;
+    display: none;
+    background-color: green;
+}
+#fsd:hover #towns{
+    display: inline-block;
+
+} 
+#areas{
+    list-style-type: none;
+    display: none;
+    background-color: brown;
+}
+#Lhr:hover #areas
+{
+     display: inline-block;
+}
+
+   </style>
+</head>
+<body>
+  <nav>
+      <ul id="main">
+          <li>Home</li>
+          <li>About</li>
+          <li id="cities"> select cities
+         <ol id="city">
+             <li id="fsd">faisalabad
+                 <ul id="towns">
+                     <li>Dground</li>
+                     <li>small dground</li>
+                     <li>kohinoor</li>
+                     <li>Madina town</li>
+                 </ul>
+             </li>
+
+
+             <li id="Lhr">Lahore
+
+             <ul id="areas">
+                 <li>Model town</li>
+                 <li>Shahdara</li>
+                 <li>Johar town</li>
+                 <li>DHA town</li>
+             </ul> 
+             </li>
+             <li id="Lhr">Multan
+                <ul id="areas">
+                <li>Nawab wala</li>
+                <li>Kabirwala</li>
+                <li>Lutafabad</li>
+                <li>Sher Shah</li>
+                </ul>
+
+             </li>
+
+             <li id="Lhr">karachi
+                <ul id="areas">
+                    <li>Bahira town</li>
+                    <li>Bin Qasim town</li>
+                    <li>Tasier town</li>
+                    <li>Sari town</li>
+                    </ul>
+             </li>
+
+         </ol>     
+        </li>
+          <li>contact</li>
+      </ul>
+  </nav>  
+</body>
+</html>

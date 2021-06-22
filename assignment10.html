@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    #mybody{
+        background-color: black;
+    }
+        #myroad {
+            width: 102%;
+        }
+
+        .wheel:nth-child(2) {
+            width: 59px;
+            position: absolute;
+            left: 290px;
+            top: 92px;
+            transform:rotate(0deg);
+            transition: transform 10s linear 0s;
+        }
+
+        .wheel:nth-child(3) {
+            width: 59px;
+            position: absolute;
+            left: 62px;
+            top: 91px;
+            transform:rotate(0deg);
+            transition: transform 10s linear 0s;
+        }
+
+         #car:hover .wheel:nth-child(2),
+         #car:hover .wheel:nth-child(3)
+         {
+            transform:rotate(360deg);
+            rotate: 100px;
+
+        }
+
+        #car {
+            position: relative;
+            top: -265px;
+        }
+
+        #carBody {
+            width: 400px;
+        }
+
+        #car{
+            margin-left:0;
+            transition: margin-left 10s linear 0s;
+        }
+
+        #car:hover{
+            margin-left: 1050px;
+        }
+        .myfan{
+
+            
+            height: 400px;
+            width: 400px;
+            border-radius: 100px;
+            animation-delay: 0s;
+            animation: myfan 3s linear 0s infinite;
+
+        }
+        @keyframes myfan{
+            form{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+</head>
+
+<body id="mybody">
+
+
+    <img id="myroad" src="myroad.jpg" alt="">
+
+    <div id="car">
+        <img id="carBody" src="my-car.png" alt="">
+
+        <img class="wheel" src="wheel.png" alt="">
+        <img class="wheel" src="wheel.png" alt="">
+        
+    </div>
+
+
+</body>
+
+</html>
+<script>
+    document.addEventListener('keydown', logKey);
+
+function logKey(e) {
+  console.log("logkey");
+}
+</script>
+<div>
+    <img class="myfan" src="fan-blade.jpg" alt="">
+</div>
+
+</body>
+</html>
